@@ -29,7 +29,7 @@
 
   <script type="text/javascript">
     var options = {
-      channel: "fifabio97", // TODO: Change this to the streams username you want to embed
+      channel: "fifa22legacycup", // TODO: Change this to the streams username you want to embed
       width: 640,
       height: 360,
     };
@@ -39,7 +39,7 @@
 
     function initiate() {
       player.addEventListener(Twitch.Player.ONLINE, handleOnline);
-      player.addEventListener(Twitch.Player.OFFLINE, handleOffline);
+      player.addEventListener(Twitch.Player.OFFLINE, handleOnline);
       player.removeEventListener(Twitch.Player.READY, initiate);
     }
 
